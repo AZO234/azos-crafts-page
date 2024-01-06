@@ -47,5 +47,8 @@
       "editor.insertSpaces": true,
       "editor.tabSize": 2
   },
-  "editor.formatOnSaveMode": "file"
+  "editor.formatOnSaveMode": "file",
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src",
+  }
 }

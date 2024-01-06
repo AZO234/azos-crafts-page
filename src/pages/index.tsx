@@ -1,6 +1,12 @@
 import Image from 'next/image'
 import { Icon } from '@iconify/react'
 import RootLayout from './layout'
+import vercelLogo from '@/assets/vercel.svg'
+import nextjsLogo from '@/assets/next.svg'
+import vscodeLogo from '@/assets/vscode.svg'
+import reactLogo from '@/assets/react.svg'
+import typescriptLogo from '@/assets/typescript.svg'
+import tailwindcssLogo from '@/assets/tailwind_css.svg'
 
 export async function getStaticProps() {
   return {
@@ -26,7 +32,7 @@ export default function Home() {
             >
               By{' '}
               <Image
-                src="/images/vercel.svg"
+                src={vercelLogo}
                 alt="Vercel Logo"
                 className="dark:invert"
                 width={100}
@@ -41,7 +47,7 @@ export default function Home() {
           <a href="https://nextjs.org/" target="_blank">
             <Image
               className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-              src="/images/next.svg"
+              src={nextjsLogo}
               alt="Next.js Logo"
               width={180}
               height={37}
@@ -53,16 +59,25 @@ export default function Home() {
           <a href="https://code.visualstudio.com/" target="_blank">
             <Image
                 className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                src="/images/vscode.svg"
+                src={vscodeLogo}
                 alt="VSCode Logo"
                 width={48}
                 height={48}
               />
-          </a>  
+          </a>
+          <a href="https://code.visualstudio.com/" target="_blank">
+            <Image
+                className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                src={reactLogo}
+                alt="VSCode Logo"
+                width={48}
+                height={48}
+              />
+          </a>
           <a href="https://www.typescriptlang.org/" target="_blank">
             <Image
                 className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                src="/images/typescript.svg"
+                src={typescriptLogo}
                 alt="TypeScript Logo"
                 width={48}
                 height={48}
@@ -71,7 +86,7 @@ export default function Home() {
           <a href="https://tailwindcss.com/" target="_blank">
             <Image
                 className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                src="/images/tailwind_css.svg"
+                src={tailwindcssLogo}
                 alt="Tailwind CSS Logo"
                 width={48}
                 height={48}
